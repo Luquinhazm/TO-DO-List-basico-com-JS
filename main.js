@@ -11,16 +11,16 @@ tarefasSalvas.forEach((data)=>{
 
 function enviarItem(){
 		id = Date.now()
-        arrDeObjeto.push({tarefa: $input.value, id:id})
-        preencherDiv()
+		arrDeObjeto.push({tarefa: $input.value, id:id})
+		preencherDiv()
 		$input.value = ''
 }
 
 function preencherDiv(){
-    arrDeObjeto.forEach((nomes)=>{   
+	arrDeObjeto.forEach((nomes)=>{   
 		const descricaoTarefas = nomes.tarefa
-		tarefa = `<p class="tarefa" data-id="${id}">${descricaoTarefas}<button class="btn-delete">excluir</button></p>`
-    })
+		tarefa = `<p class="tarefa" data-id="${id}">${descricaoTarefas}<button class="btn-delete">X</button></p>`
+	})
 	tarefasSalvas.push({nomeDaTarefa: tarefa, id: id}) 
 	localStorage.setItem('tarefas', JSON.stringify(tarefasSalvas))
 	$div.insertAdjacentHTML('beforeend', tarefa)

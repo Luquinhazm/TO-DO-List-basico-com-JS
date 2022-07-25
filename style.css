@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(66, 60, 60);
+}
+
+.main{
+    width: 100%;
+    margin-top: 48px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.send-button{
+    border: solid 2px green;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+}
+
+.fa-arrow-right{
+ 
+    color: green;
+}
+
+.tarefa{
+    margin: 18px auto;
+    width: 320px;
+    min-height: 40px;
+    position: relative;
+    background-color: rgb(248, 248, 248);
+    padding: 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-delete{
+    border: solid 2px red;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    color: red;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
