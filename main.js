@@ -21,6 +21,7 @@ function preencherDiv(){
 		const descricaoTarefas = nomes.tarefa
 		tarefa = `<p class="tarefa" data-id="${id}">${descricaoTarefas}<button class="btn-delete">X</button></p>`
 	})
+	console.log(tarefa)
 	tarefasSalvas.push({nomeDaTarefa: tarefa, id: id}) 
 	localStorage.setItem('tarefas', JSON.stringify(tarefasSalvas))
 	$div.insertAdjacentHTML('beforeend', tarefa)
@@ -54,6 +55,5 @@ function filtro(id){
 	tarefasSalvas = TarefasLocalStorage
 
 	localStorage.setItem('tarefas', JSON.stringify(tarefasSalvas))
-	
 }
 

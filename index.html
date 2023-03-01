@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO LIST</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <main class="main">
 
-        <form>
-            <input type="text" id="input">
-            <button onclick="enviarItem()" class="send-button"><i class="fa-solid fa-arrow-right"></i></button>
-        </form>
-        
-    
-        <div id="content"></div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header-todo">
+        <div class="wrapper-titulo">
+          <h1>TO DO LIST</h1>
+          <span>by Luquinhazm</span>
+        </div>
+      </header>
+
+      <form>
+        <input type="text" id="input" placeholder="Digite sua Tarefa" />
+
+        <button onclick="enviarItem()" class="send-button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+
+      <div id="content"></div>
     </main>
-   
-    <script src="https://kit.fontawesome.com/0af2f7e93b.js" crossorigin="anonymous"></script>
+
+    <script
+      src="https://kit.fontawesome.com/0af2f7e93b.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

@@ -1,56 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(66, 60, 60);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-.main{
-    width: 100%;
-    margin-top: 48px;
+body {
+  background-color: #39196d;
 }
 
-form{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 4px;
+.header-todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+  color: #59fbb2;
 }
 
-.send-button{
-    border: solid 2px green;
-    border-radius: 100%;
-    width: 24px;
-    height: 24px;
-    background-color: #fff;
+.header-todo .wrapper-titulo {
+  width: 280px;
+  padding: 8px;
 }
 
-.fa-arrow-right{
- 
-    color: green;
+.header-todo .wrapper-titulo h1 {
+  text-align: center;
 }
 
-.tarefa{
-    margin: 18px auto;
-    width: 320px;
-    min-height: 40px;
-    position: relative;
-    background-color: rgb(248, 248, 248);
-    padding: 8px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
+.header-todo .wrapper-titulo span {
+  display: block;
+  text-align: right;
 }
 
-.btn-delete{
-    border: solid 2px red;
-    border-radius: 100%;
-    width: 24px;
-    height: 24px;
-    background-color: #fff;
-    color: red;
-    position: absolute;
-    right: 5px;
-    cursor: pointer;
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+form input {
+  height: 48px;
+  width: 280px;
+  border: none;
+  background-color: #eae6d8;
+  padding: 6px;
+  border-radius: 12px;
+  color: #000;
+}
+
+.send-button {
+  border: solid 4px #59fbb2;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  background-color: #39196d;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.send-button:hover {
+  scale: 1.05;
+}
+
+.fa-arrow-right {
+  font-size: 24px;
+  color: #59fbb2;
+}
+
+.tarefa {
+  margin: 24px auto;
+  width: 350px;
+  min-height: 64px;
+  position: relative;
+  background-color: #eae6d8;
+  padding: 8px;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.btn-delete {
+  border: solid 2px red;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  background-color: #eae6d8;
+  color: red;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
 }
